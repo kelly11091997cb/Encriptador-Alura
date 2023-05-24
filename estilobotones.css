@@ -1,0 +1,45 @@
+button {
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+    z-index: 3;
+    padding: 0.8rem 5rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    background: #c8e8f0;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 4px 4px 12px #ffffff;
+    transform: scale(0.8);
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    left: 55%;
+    transform: translateX(-40%) scaleY(1.3) scaleX(1);
+    top: 180%;
+    width: 180%;
+    height: 190%;
+    background-color: #0A3871;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -3;
+}
+
+button:hover {
+    color: #f5f5f5;
+    border: 1px solid #0A3871;
+}
+
+button:hover::after {
+    top: -45%;
+    background-color: #0A3871;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="i" href="imagenes/favicon_alura.png" />
+        <link rel="stylesheet" href="estilo.css" />
+        <link rel="stylesheet" href="estilobotones.css" />
+        <!-- Font Awesome es una biblioteca de iconos vectoriales de código abierto y gratuita -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <title>Encriptador/Desencriptador</title>
+    </head>
+    <body>
+        <header>
+            <a>
+                <img class="logo_a" src="imagenes/Logo.png" alt="logo_Alura" />
+            </a>
+        </header>
+
+        <main class="cuerpo_principal">
+            <section class="seccion_1">
+                
+                <div class="contenedor_caja_texto">
+                    <textarea name="fond" id="inp_text" class="caja_texto" autocomplete="off" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+
+                <div class="alerta">
+                    <p class="item">Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="contenedor_botones">
+                    <button class="btn_encriptar">Encriptar</button>
+                    <button class="btn_desencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="seccion_2">
+                <div class="contenedor_seccion_2">
+                    <div class="resultado">
+                        <p class="texto_resultado"></p>
+                    </div>
+                    <h3 class="mensaje_no_encontrado">Ningun mensaje fue encontrado</h3>
+                    <div class="contenedor_dibujo">
+                        <img src="imagenes/Muñeco.jpg" alt="imagen_alura" id="img_alura1" />
+                    </div>
+                    <div class="contenedor_parrafo">
+                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                    <div class="contenedor_copiar">
+                        <button onclick="" class="btn_copiar">Copiar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy ByKellycb</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
